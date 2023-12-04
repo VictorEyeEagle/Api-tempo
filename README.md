@@ -1,70 +1,37 @@
-# Getting Started with Create React App
+# Consulta de Clima e Imagem da Cidade
 
-This project was bootstrapped with [Create React App](https://github.com/facebook/create-react-app).
+Este projeto utiliza React para mostrar a temperatura atual de uma cidade e exibir uma imagem relacionada a ela. Ele faz chamadas para as APIs do OpenWeatherMap e do Pexels.
 
-## Available Scripts
+## Tecnologias Utilizadas
 
-In the project directory, you can run:
+- React
+- Axios
+- API do OpenWeatherMap
+- API do Pexels
 
-### `npm start`
+## Como Funciona
 
-Runs the app in the development mode.\
-Open [http://localhost:3000](http://localhost:3000) to view it in your browser.
+O usuário insere o nome de uma cidade e clica no botão "PESQUISAR". O aplicativo faz duas chamadas de API:
 
-The page will reload when you make changes.\
-You may also see any lint errors in the console.
+1. **OpenWeatherMap API**: Obtém a temperatura atual da cidade.
+2. **Pexels API**: Busca uma imagem relacionada à cidade.
 
-### `npm test`
+Se a cidade for encontrada, a temperatura em Celsius e Fahrenheit é exibida, juntamente com a imagem da cidade. Se a cidade não for encontrada ou se não houver imagem relacionada, a área da imagem será deixada em branco.
 
-Launches the test runner in the interactive watch mode.\
-See the section about [running tests](https://facebook.github.io/create-react-app/docs/running-tests) for more information.
+## Instruções de Uso
 
-### `npm run build`
+1. Clone o repositório.
+2. Instale as dependências usando `npm install`.
+3. Inicie o aplicativo com `npm start`.
+4. Insira o nome da cidade no campo de pesquisa e clique em "PESQUISAR".
 
-Builds the app for production to the `build` folder.\
-It correctly bundles React in production mode and optimizes the build for the best performance.
+## Como Rodar o Projeto
 
-The build is minified and the filenames include the hashes.\
-Your app is ready to be deployed!
+Certifique-se de substituir `'SUA_CHAVE_DA_API_DO_PEXELS'` e `'SUA_CHAVE_DA_API_DO_OPENWEATHERMAP'` pelo seu token da API correspondente.
 
-See the section about [deployment](https://facebook.github.io/create-react-app/docs/deployment) for more information.
+### Exemplo de Uso
 
-### `npm run eject`
-
-**Note: this is a one-way operation. Once you `eject`, you can't go back!**
-
-If you aren't satisfied with the build tool and configuration choices, you can `eject` at any time. This command will remove the single build dependency from your project.
-
-Instead, it will copy all the configuration files and the transitive dependencies (webpack, Babel, ESLint, etc) right into your project so you have full control over them. All of the commands except `eject` will still work, but they will point to the copied scripts so you can tweak them. At this point you're on your own.
-
-You don't have to ever use `eject`. The curated feature set is suitable for small and middle deployments, and you shouldn't feel obligated to use this feature. However we understand that this tool wouldn't be useful if you couldn't customize it when you are ready for it.
-
-## Learn More
-
-You can learn more in the [Create React App documentation](https://facebook.github.io/create-react-app/docs/getting-started).
-
-To learn React, check out the [React documentation](https://reactjs.org/).
-
-### Code Splitting
-
-This section has moved here: [https://facebook.github.io/create-react-app/docs/code-splitting](https://facebook.github.io/create-react-app/docs/code-splitting)
-
-### Analyzing the Bundle Size
-
-This section has moved here: [https://facebook.github.io/create-react-app/docs/analyzing-the-bundle-size](https://facebook.github.io/create-react-app/docs/analyzing-the-bundle-size)
-
-### Making a Progressive Web App
-
-This section has moved here: [https://facebook.github.io/create-react-app/docs/making-a-progressive-web-app](https://facebook.github.io/create-react-app/docs/making-a-progressive-web-app)
-
-### Advanced Configuration
-
-This section has moved here: [https://facebook.github.io/create-react-app/docs/advanced-configuration](https://facebook.github.io/create-react-app/docs/advanced-configuration)
-
-### Deployment
-
-This section has moved here: [https://facebook.github.io/create-react-app/docs/deployment](https://facebook.github.io/create-react-app/docs/deployment)
-
-### `npm run build` fails to minify
-
-This section has moved here: [https://facebook.github.io/create-react-app/docs/troubleshooting#npm-run-build-fails-to-minify](https://facebook.github.io/create-react-app/docs/troubleshooting#npm-run-build-fails-to-minify)
+```javascript
+// Inserindo suas chaves da API
+const apiKey = 'SUA_CHAVE_DA_API_DO_OPENWEATHERMAP';
+const pexelsApiKey = 'SUA_CHAVE_DA_API_DO_PEXELS';
