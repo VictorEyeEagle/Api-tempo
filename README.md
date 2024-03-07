@@ -1,37 +1,37 @@
-# Consulta de Clima e Imagem da Cidade
+# Weather and City Image Query
 
-Este projeto utiliza React para mostrar a temperatura atual de uma cidade e exibir uma imagem relacionada a ela. Ele faz chamadas para as APIs do OpenWeatherMap e do Pexels.
+This project utilizes React to display the current temperature of a city and show an image related to it. It makes calls to the OpenWeatherMap and Pexels APIs.
 
-## Tecnologias Utilizadas
+## Technologies Used
 
 - React
 - Axios
-- API do OpenWeatherMap
-- API do Pexels
+- OpenWeatherMap API
+- Pexels API
 
-## Como Funciona
+## How It Works
 
-O usuário insere o nome de uma cidade e clica no botão "PESQUISAR". O aplicativo faz duas chamadas de API:
+The user inputs the name of a city and clicks the "SEARCH" button. The application makes two API calls:
 
-1. **OpenWeatherMap API**: Obtém a temperatura atual da cidade.
-2. **Pexels API**: Busca uma imagem relacionada à cidade.
+1. **OpenWeatherMap API**: Retrieves the current temperature of the city.
+2. **Pexels API**: Searches for an image related to the city.
 
-Se a cidade for encontrada, a temperatura em Celsius e Fahrenheit é exibida, juntamente com a imagem da cidade. Se a cidade não for encontrada ou se não houver imagem relacionada, a área da imagem será deixada em branco.
+If the city is found, the temperature in Celsius and Fahrenheit is displayed, along with the image of the city. If the city is not found or if there is no related image, the image area will be left blank.
 
-## Instruções de Uso
+## Usage Instructions
 
-1. Clone o repositório.
-2. Instale as dependências usando `npm install`.
-3. Inicie o aplicativo com `npm start`.
-4. Insira o nome da cidade no campo de pesquisa e clique em "PESQUISAR".
+1. Clone the repository.
+2. Install dependencies using `npm install`.
+3. Start the application with `npm start`.
+4. Enter the city name in the search field and click "SEARCH".
 
-## Como Rodar o Projeto
+## Running the Project
 
-Certifique-se de substituir `'SUA_CHAVE_DA_API_DO_PEXELS'` e `'SUA_CHAVE_DA_API_DO_OPENWEATHERMAP'` pelo seu token da API correspondente.
+Make sure to replace `'YOUR_PEXELS_API_KEY'` and `'YOUR_OPENWEATHERMAP_API_KEY'` with your corresponding API token.
 
-### Exemplo de Uso
+### Example Usage
 
 ```javascript
-// Inserindo suas chaves da API
-const apiKey = 'SUA_CHAVE_DA_API_DO_OPENWEATHERMAP';
-const pexelsApiKey = 'SUA_CHAVE_DA_API_DO_PEXELS';
+// Inserting your API keys
+const apiKey = 'YOUR_OPENWEATHERMAP_API_KEY';
+const pexelsApiKey = 'YOUR_PEXELS_API_KEY';
